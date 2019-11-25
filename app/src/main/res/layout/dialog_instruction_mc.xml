@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="500dp"
+    android:layout_gravity="center"
+    android:padding="20dp"
+    android:background="@drawable/multiplechoiceinstruction">
+
+    <TextView
+        android:id="@+id/btnHideInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:text="Got It, Thanks!"
+        android:textColor="#EDE191"
+        android:textSize="15sp" />
+</android.widget.RelativeLayout>

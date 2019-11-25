@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="200dp"
+    android:layout_gravity="center"
+    android:background="#325F92">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:text="Done! Thank You!"
+        android:textColor="@color/whitesmoke"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnSeeResult"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="26dp"
+        android:background="@color/newblue"
+        android:text="See Result"
+        android:textColor="@color/whitesmoke" />
+
+    <Button
+        android:id="@+id/btnClose"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/btnSeeResult"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/btnSeeResult"
+        android:background="@color/red"
+        android:text="Close"
+        android:textColor="@color/whitesmoke" />
+
+</android.widget.RelativeLayout>

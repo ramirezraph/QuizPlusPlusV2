@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/bgcolor"
+    android:layout_height="match_parent"
+    tools:context="com.student.ramirez.quizplusplus.CreateQuestionActivity">
+
+    <LinearLayout
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#5584AC"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lorem_ipsum"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtNumberQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/titleBar"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/no_of_question"
+        android:textColor="@color/whitesmoke"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtNumberQ"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/txtNumberQ"
+        android:text="@string/_0"
+        android:textColor="#7AFFE4"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnAddQuestion"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/titleBar"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/addbutton" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_below="@id/btnAddQuestion" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/txtNumberQ"
+        android:layout_below="@+id/recyclerViewQuestion"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/redbackbutton" />
+
+    <Button
+        android:id="@+id/btnFinish"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/btnBack"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/btnBack"
+        android:background="@drawable/finishbutton" />
+
+</android.widget.RelativeLayout>

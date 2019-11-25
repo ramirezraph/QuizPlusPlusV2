@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    tools:context="com.student.ramirez.quizplusplus.UpdateInfoActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgProfilePicture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignEnd="@+id/txtChangePassword"
+        android:layout_below="@+id/btnBack"
+        android:scaleType="centerCrop"
+        android:src="@drawable/defaultmale" />
+
+    <Button
+        android:id="@+id/btnBack"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/backbutton" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btnBack"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/update_information"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etuFullName"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgProfilePicture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#90FFFFFF"
+        android:ems="10"
+        android:hint="@string/full_name"
+        android:inputType="textPersonName"
+        android:textColor="@color/whitesmoke"
+        android:textColorHint="#90FFFFFF"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etuBirthdate"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etuFullName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:backgroundTint="#90FFFFFF"
+        android:ems="10"
+        android:hint="@string/birthdate_mm_dd_yyyy"
+        android:inputType="textPersonName"
+        android:textColor="@color/whitesmoke"
+        android:textColorHint="#90FFFFFF"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etuEmail"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etuBirthdate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:backgroundTint="#90FFFFFF"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/whitesmoke"
+        android:textColorHint="#90FFFFFF"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/rguType"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etuEmail"
+        android:layout_alignStart="@id/etuEmail"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbStudent"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#90FFFFFF"
+            android:text="@string/student"
+            android:textColor="#90FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/rbTeacher"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#90FFFFFF"
+            android:text="@string/teacher"
+            android:textColor="#90FFFFFF" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtChangePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/rguType"
+        android:layout_below="@id/rguType"
+        android:layout_marginStart="-6dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/change_password_optional"
+        android:textColor="@color/colorAccent" />
+
+    <EditText
+        android:id="@+id/etuOldPassword"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtChangePassword"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#90FFFFFF"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/old_password"
+        android:textColor="@color/whitesmoke"
+        android:textColorHint="#90FFFFFF"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etuPassword"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etuOldPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:backgroundTint="#90FFFFFF"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/new_password"
+        android:textColor="@color/whitesmoke"
+        android:textColorHint="#90FFFFFF"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etuConPassword"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etuPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:backgroundTint="#90FFFFFF"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/retyped_new_password"
+        android:textColor="@color/whitesmoke"
+        android:textColorHint="#90FFFFFF"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnUpdateInfo"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/etuConPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/updatebutton" />
+
+    <Button
+        android:id="@+id/btnUpdatePicture"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/etuFullName"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/imgProfilePicture"
+        android:background="@drawable/editprofilepictureicon" />
+
+
+</android.widget.RelativeLayout>

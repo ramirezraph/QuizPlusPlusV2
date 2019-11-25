@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    tools:context="com.student.ramirez.quizplusplus.CreateAccountActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnBack"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="9dp"
+            android:layout_toStartOf="@+id/imageViewLogo"
+            android:background="@drawable/backbutton" />
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/btnBack"
+            android:layout_marginEnd="16dp"
+            android:text="@string/sign_up"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="130dp"
+            android:layout_height="140dp"
+            android:layout_below="@+id/txtResult"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/app_logo"
+            app:srcCompat="@drawable/applogosingle" />
+
+        <EditText
+            android:id="@+id/etFullName"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="31dp"
+            android:backgroundTint="#90FFFFFF"
+            android:ems="10"
+            android:hint="@string/full_name"
+            android:inputType="textPersonName"
+            android:textColor="@color/whitesmoke"
+            android:textColorHint="#90FFFFFF"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etBirthdate"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etFullName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:backgroundTint="#90FFFFFF"
+            android:ems="10"
+            android:hint="@string/birthdate_mm_dd_yyyy"
+            android:inputType="date"
+            android:textColor="@color/whitesmoke"
+            android:textColorHint="#90FFFFFF"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etBirthdate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:backgroundTint="#90FFFFFF"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/whitesmoke"
+            android:textColorHint="#90FFFFFF"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etRoomPassword"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etEmail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:backgroundTint="#90FFFFFF"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColor="@color/whitesmoke"
+            android:textColorHint="#90FFFFFF"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etConPassword"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etRoomPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#90FFFFFF"
+            android:ems="10"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:textColor="@color/whitesmoke"
+            android:textColorHint="#90FFFFFF"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/rgType"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/etConPassword"
+            android:layout_below="@+id/etConPassword"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbStudent"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="#90FFFFFF"
+                android:text="@string/student"
+                android:textColor="#90FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/rbTeacher"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="#90FFFFFF"
+                android:text="@string/teacher"
+                android:textColor="#90FFFFFF" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnRegister"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/rgType"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"
+            android:background="@drawable/registerbutton" />
+    </RelativeLayout>
+
+</android.widget.ScrollView>

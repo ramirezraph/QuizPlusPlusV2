@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context="com.student.ramirez.quizplusplus.CreateQuizActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgcolor"
+        android:paddingBottom="80dp">
+
+        <TextView
+            android:id="@+id/textViewQuizTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textViewQuizDesc"
+            android:layout_below="@+id/txtID"
+            android:layout_marginTop="82dp"
+            android:text="@string/quiz_title"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etQuizTitle"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/etQuizDesc"
+            android:layout_below="@+id/textViewQuizTitle"
+            android:backgroundTint="#90FFFFFF"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/whitesmoke"
+            android:textColorHint="#90FFFFFF"
+            android:textSize="16sp"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/textViewQuizDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etQuizTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/description"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etQuizDesc"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewQuizDesc"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#90FFFFFF"
+            android:ems="10"
+            android:inputType="textMultiLine|textImeMultiLine"
+            android:textColor="@color/whitesmoke"
+            android:textColorHint="#90FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_toStartOf="@+id/txtID"
+            android:text="ID:"
+            android:textColor="@color/whitesmoke" />
+
+        <TextView
+            android:id="@+id/txtID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView13"
+            android:layout_alignStart="@+id/etQuizTitle"
+            android:layout_marginStart="12dp"
+            android:text="N1wXbg1wfjMr8qzDOdeQlceGsYo1"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView11"
+            android:layout_below="@+id/textView11"
+            android:layout_marginTop="9dp"
+            android:text="Type:"
+            android:textColor="@color/whitesmoke" />
+
+        <TextView
+            android:id="@+id/txtType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView13"
+            android:layout_alignBottom="@+id/textView13"
+            android:layout_alignStart="@+id/txtID"
+            android:text="True or False"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView18"
+            android:layout_below="@+id/etQuizDesc"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="62dp"
+            android:background="@color/red"
+            android:text="Cancel"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnFinish"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnCancel"
+            android:layout_alignBottom="@+id/btnCancel"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/btnCancel"
+            android:background="#4DAA91"
+            android:text="Finish"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnEditQuestions"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btnCancel"
+            android:layout_below="@+id/btnCancel"
+            android:layout_marginTop="13dp"
+            android:background="#AA7C4D"
+            android:text="Edit Questions"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView13"
+            android:layout_below="@+id/textView13"
+            android:layout_marginTop="8dp"
+            android:text="Timer:"
+            android:textColor="@color/whitesmoke" />
+
+        <TextView
+            android:id="@+id/txtTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtType"
+            android:layout_alignTop="@+id/textView18"
+            android:layout_marginStart="9dp"
+            android:text="20 secs"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etQuizDesc"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@+id/textView11"
+            android:text="Timer Limit:"
+            android:textColor="@color/white" />
+
+        <Spinner
+            android:id="@+id/cbTimerLimit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView19"
+            android:layout_toEndOf="@+id/txtType"
+            android:backgroundTint="@color/white" />
+
+    </RelativeLayout>
+
+</android.widget.ScrollView>

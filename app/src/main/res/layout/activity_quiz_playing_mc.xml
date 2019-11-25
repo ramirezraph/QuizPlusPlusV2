@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:background="#3E4D80"
+    tools:context="com.student.ramirez.quizplusplus.QuizPlayingTFActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#325F92">
+
+        <TextView
+            android:id="@+id/txtCountdown"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="17dp"
+            android:background="@drawable/imagecircle"
+            android:fontFamily="@font/arimo"
+            android:gravity="center"
+            android:paddingBottom="30dp"
+            android:text="@string/_10"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/txtScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@+id/txtCountdown"
+            android:text="@string/java_programming"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtQuizID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtScore"
+            android:layout_below="@+id/txtScore"
+            android:text="@string/l4uicgfxlcf5lru2y3d"
+            android:textColor="#9ACCF6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtQuizID"
+            android:layout_marginTop="35dp"
+            android:background="#3E4D80"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:background="@drawable/backgroundboard">
+
+                <TextView
+                    android:id="@+id/txtQuestionNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/question_1"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/txtQuestion"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/txtQuestionNumber"
+                    android:layout_below="@+id/txtQuestionNumber"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipi_cing_elit_sed_do_eiusmod_tempor"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtQuizDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/txtQuestionNumber"
+                    android:layout_below="@+id/txtQuestion"
+                    android:layout_marginTop="26dp"
+                    android:text="@string/choices"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnA"
+                    style="@android:style/Widget.Holo.Button.Borderless"
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/txtQuizDesc"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="11dp"
+                    android:background="@color/whitesmoke"
+                    android:paddingStart="20dp"
+                    android:text="A. Lorem Ipsum Donor"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnB"
+                    style="@android:style/Widget.Holo.Button.Borderless"
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:layout_alignStart="@+id/btnA"
+                    android:layout_below="@+id/btnA"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/whitesmoke"
+                    android:paddingStart="20dp"
+                    android:text="B. Lorem Ipsum Donor"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnC"
+                    style="@android:style/Widget.Holo.Button.Borderless"
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:layout_alignStart="@+id/btnB"
+                    android:layout_below="@+id/btnB"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/whitesmoke"
+                    android:paddingStart="20dp"
+                    android:text="C. Lorem Ipsum Donor"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnD"
+                    style="@android:style/Widget.Holo.Button.Borderless"
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:layout_alignStart="@+id/btnC"
+                    android:layout_below="@+id/btnC"
+                    android:layout_marginTop="9dp"
+                    android:background="@color/whitesmoke"
+                    android:paddingStart="20dp"
+                    android:text="D. Lorem Ipsum Donor"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnShowAnswer"
+                style="@android:style/Widget.Button"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/newblue"
+                android:text="@string/check_results"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnEndQuiz"
+                style="@android:style/Widget.Button"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@color/red"
+                android:text="@string/end_quiz"
+                android:layout_marginBottom="50dp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.widget.ScrollView>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    tools:context="com.student.ramirez.quizplusplus.RoomActivity">
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="20dp"
+        android:text="Room #: 1000"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtResult"
+        android:layout_below="@+id/txtResult"
+        android:layout_marginTop="20dp"
+        android:text="User/s"
+        android:textColor="@color/whitesmoke"
+        android:textSize="18sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewUserList"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="11dp" />
+
+    <Button
+        android:id="@+id/btnViewQuiz"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recyclerViewUserList"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:background="#4D71AA"
+        android:text="View Quiz"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnEndRoom"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnViewQuiz"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:background="#AA4D4D"
+        android:text="Leave"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnRoomInfo"
+        style="@android:style/Widget.Holo.Button.Borderless.Small"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/txtResult"
+        android:layout_marginEnd="14dp"
+        android:background="#4DAA91"
+        android:text="Room Info"
+        android:textColor="@color/white" />
+
+</android.widget.RelativeLayout>

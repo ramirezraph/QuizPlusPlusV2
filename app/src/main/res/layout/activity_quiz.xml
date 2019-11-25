@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/bgcolor"
+    android:layout_height="match_parent"
+    tools:context="com.student.ramirez.quizplusplus.QuizActivity">
+
+    <Button
+        android:id="@+id/btnBack"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/backbutton" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btnBack"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/quiz_archive"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/createbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btnBack"
+        android:layout_centerHorizontal="true"
+        android:background="#5584AC"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCreateQuiz"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/create_a_quiz"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@android:color/white"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/etSearchQuiz"
+            android:layout_width="170dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/whitesmoke"
+            android:ems="10"
+            android:fontFamily="@font/arimo"
+            android:hint="@string/enter_keyword_here"
+            android:inputType="textPersonName"
+            android:paddingStart="5dp"
+            android:textSize="15sp"
+            tools:ignore="RtlSymmetry" />
+
+        <Button
+            android:id="@+id/btnSearchQuiz"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="23dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/searchbutton" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/createbar"
+        android:paddingBottom="10dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</android.widget.RelativeLayout>

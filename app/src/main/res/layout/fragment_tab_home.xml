@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    tools:context="com.student.ramirez.quizplusplus.TabHome">
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:src="@drawable/appwelcome" />
+
+    <ImageView
+        android:id="@+id/ivAppLogo"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="-105dp"
+        android:src="@mipmap/applogo" />
+
+    <ImageView
+        android:id="@+id/ivTextBooks"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/bookimage" />
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="7dp"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/QuestionContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#923232"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/txtQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/arimo"
+                android:text="@string/question"
+                android:textColor="@color/lightgray"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/txtScore"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/txtQuestion"
+                android:layout_below="@+id/txtQuestion"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/arimo"
+                android:hint="@string/put_the_question_here"
+                android:inputType="textMultiLine|textLongMessage"
+                android:paddingBottom="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/lightgray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtQuizDesc"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/txtScore"
+                android:layout_below="@+id/txtScore"
+                android:fontFamily="@font/arimo"
+                android:text="@string/answer"
+                android:textColor="@color/lightgray"
+                android:textSize="14sp" />
+
+            <RadioGroup
+                android:id="@+id/rgAnswerTrueFalse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/txtQuizDesc"
+                android:layout_below="@+id/txtQuizDesc"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbAnswerTrue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:buttonTint="@color/white"
+                    android:text="@string/answertrue"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/rbAnswerFalse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:checked="false"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/white"
+                    android:text="@string/answerfalse"
+                    android:textColor="@color/white" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnDeleteThisQuestion"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignBottom="@+id/txtQuizDesc"
+                android:layout_marginStart="17dp"
+                android:layout_toEndOf="@+id/txtScore"
+                android:background="@drawable/deleteicon" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

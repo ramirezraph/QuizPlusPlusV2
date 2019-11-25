@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.student.ramirez.quizplusplus.LoginActivity">
+
+    <ImageView
+        android:id="@+id/ivSignInBar"
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="40dp"
+        app:srcCompat="@drawable/signinbar" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ivSignInBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/emailfield"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="60dp"
+        android:textColor="@color/whitesmoke"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="16sp"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/etRoomPassword"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/etEmail"
+        android:layout_below="@+id/etEmail"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/passwordfield"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="60dp"
+        android:textColor="@color/whitesmoke"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="16sp"
+        tools:ignore="RtlSymmetry" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/etRoomPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/loginbutton" />
+
+    <TextView
+        android:id="@+id/btnTxtSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnLogin"
+        android:layout_below="@+id/btnLogin"
+        android:layout_marginEnd="29dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/sign_up"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtDontHaveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnTxtSignUp"
+        android:layout_alignBottom="@+id/btnTxtSignUp"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/btnTxtSignUp"
+        android:text="@string/don_t_have_an_account"
+        android:textColor="@color/whitesmoke"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

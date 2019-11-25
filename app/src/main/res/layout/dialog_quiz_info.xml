@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#325F92"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="27dp"
+        android:text="@string/lorem_ipsum_title"
+        android:textColor="@color/colorAccent"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/txtQuizID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtTitle"
+        android:layout_below="@+id/txtTitle"
+        android:text="@string/l4uicgfxlcf5lru2y3d"
+        android:textColor="@color/whitesmoke" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtQuizID"
+        android:layout_below="@+id/txtQuizID"
+        android:layout_marginTop="14dp"
+        android:text="@string/description"
+        android:textColor="@color/lightblueText"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtQuizDesc"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="7dp"
+        android:text="@string/lorem_ipsum_donor"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtQuizDesc"
+        android:layout_below="@+id/txtQuizDesc"
+        android:layout_marginTop="7dp"
+        android:text="@string/quiz_type"
+        android:textColor="@color/lightblueText"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtQuizType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:text="@string/true_or_false"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="7dp"
+        android:text="@string/creator"
+        android:textColor="@color/lightblueText"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtQuizCreator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_alignStart="@+id/txtQuizType"
+        android:text="@string/lorem_gmail_com"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_below="@+id/textView8"
+        android:layout_marginTop="7dp"
+        android:text="@string/no_of_question"
+        android:textColor="@color/lightblueText" />
+
+    <TextView
+        android:id="@+id/txtNoQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtQuizCreator"
+        android:layout_alignTop="@+id/textView10"
+        android:text="@string/_10"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnPlayQuizNow"
+        android:layout_width="180dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/textView14"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/playquizbutton" />
+
+    <Button
+        android:id="@+id/btnCloseDialog"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="30dp"
+        android:text="@string/x"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView10"
+        android:layout_below="@+id/textView10"
+        android:layout_marginTop="9dp"
+        android:text="Timer limit per question:"
+        android:textColor="@color/lightblueText" />
+
+    <TextView
+        android:id="@+id/txttimertimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView14"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/textView14"
+        android:text="TextView"
+        android:textColor="@color/white" />
+
+</android.widget.RelativeLayout>

@@ -1,0 +1,101 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:tag="profile"
+    tools:context="com.student.ramirez.quizplusplus.TabHome">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp">
+        <!-- TODO: Update blank fragment layout -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgProfilePicture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="31dp"
+            android:src="@drawable/defaultmale" />
+
+        <TextView
+            android:id="@+id/txtUserFullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgProfilePicture"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/arimo"
+            android:text="@string/lorem_ipsum"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtUserEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtUserFullname"
+            android:layout_centerHorizontal="true"
+            android:text="@string/loremipsum_lorem_com"
+            android:textColor="@color/whitesmoke"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnUpdateInfo"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtUserEmail"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="27dp"
+            android:background="@drawable/btnupdateinfo"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/btnRecords"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:layout_alignStart="@+id/btnMyQuizzes"
+            android:layout_below="@+id/btnMyQuizzes"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btnrecords"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btnMyQuizzes"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:layout_alignStart="@+id/btnUpdateInfo"
+            android:layout_below="@+id/btnUpdateInfo"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btnmyquizzes" />
+
+        <Button
+            android:id="@+id/btnSignOut"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:layout_alignBaseline="@+id/btnUpdateInfo"
+            android:layout_alignBottom="@+id/btnUpdateInfo"
+            android:layout_marginStart="24dp"
+            android:layout_toEndOf="@+id/btnUpdateInfo"
+            android:background="@drawable/btnsignout" />
+
+        <Button
+            android:id="@+id/btnCreateAccountAdmin"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/btnSignOut"
+            android:background="@drawable/btncreateaccountadmin"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</ScrollView>
